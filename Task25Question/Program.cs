@@ -8,18 +8,19 @@ Console.WriteLine("Введите число A:");
 int A = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число B:");
 int B = int.Parse(Console.ReadLine());
-int finalResult = Mult(A, B);
-Console.WriteLine(finalResult);
 
-int Mult(int num1, int num2)
+int Mult(int A, int B)
 {
     int count = 1;
-    int result = num1;
-    while (count < num2)
+    int result = 1;
+    while (count <= B)
     {
-        result = result * num1;
+        result = result * A;
         count++;
     }
     return count;
     Console.Write($"Ответ {result}");
 }
+
+int mult = Mult(A, B);
+Console.WriteLine(mult);

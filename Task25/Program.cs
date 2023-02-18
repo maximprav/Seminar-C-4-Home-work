@@ -12,8 +12,8 @@ int B = int.Parse(Console.ReadLine());
 if (A>0 && B>0)
 {
     int count = 1;
-    int result = A;
-     while(count<B)
+    int result = 1;
+     while(count<=B)
      {
           result = result*A;
           count++;
