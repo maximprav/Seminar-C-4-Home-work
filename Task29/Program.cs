@@ -5,3 +5,14 @@
 
 int[] myArray;
 myArray = new int[8];
+int index = 0;
+int size = myArray.Length;
+
+while (index<size)
+{
+    myArray[index] = new Random().Next(0, 100);
+    Console.Write(myArray[index] + " ");
+    index++;
+}
+
+//array[i] = new Random().Next(0, 2);
