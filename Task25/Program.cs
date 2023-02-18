@@ -8,17 +8,20 @@ Console.WriteLine("Введите число A:");
 int A = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число B:");
 int B = int.Parse(Console.ReadLine());
-int result = GetNumbers(A,B);
-Console.WriteLine($"Итог {result}");
 
-int GetNumbers(int numberA, int numberB)
+if (A>0 && B>0)
 {
     int count = 1;
-    while(count<numberB)
-    {
-        int numberC = 
-       numberC = numberA*numberA;  
-       count++;
-    }
-    return count;
-    }
+    int result = A;
+     while(count<B)
+     {
+          result = result*A;
+          count++;
+     }
+
+Console.Write($"Ответ {result}");
+}
+else
+{
+    Console.Write($"Заданы неверные параметры");
+}
